@@ -6,8 +6,8 @@ from sklearn.linear_model import LinearRegression
 from datetime import datetime, timedelta
 
 # --- CONFIGURACIÓN ---
-TICKERS = ['AAPL', 'AMZN', 'QQQ', 'SPY', 'PLTR', 'M', 'V', 'AAL']
-PERIOD_DATA = '1y'  # Puedes cambiar a '5y' para ver la diferencia de estabilidad
+TICKERS = ['AAPL', 'AMZN', 'QQQ', 'SPY', 'PLTR', 'M', 'V', 'AAL'] #Puedes cambiar los tickers a los que quieras
+PERIOD_DATA = '1y' 
 DIAS_PROYECCION = 90
 
 def proyectar_con_bandas(ticker_simbolo):
