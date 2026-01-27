@@ -29,7 +29,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- CONFIGURACIÓN API ---
-API_KEY = 'd5sffo1r01qks02d3mt0d5sffo1r01qks02d3mtg' # Coloca tu llave de Finnhub
+API_KEY = '' # Coloca tu llave de Finnhub
 
 def fetch_news(ticker):
     hoy = datetime.now().strftime('%Y-%m-%d')
