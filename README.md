@@ -27,3 +27,5 @@ El modelo no solo proyecta una línea, sino que mide la volatilidad respecto a e
 - Banda Superior: Posible resistencia o zona de sobrecompra.
 - Banda Inferior: Posible soporte o zona de sobreventa (oportunidad de entrada).
 - Ancho del Canal: Refleja el riesgo histórico del activo. Un canal ancho indica alta volatilidad.
+
+**🚨Disclaimer:** Este proyecto es exclusivamente con fines educativos y de portafolio. No constituye asesoría financiera.
