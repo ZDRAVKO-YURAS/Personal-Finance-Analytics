@@ -1,6 +1,11 @@
-# 🏛️ Market-Intel-Suite
+# 🏛️ Finance-Analytics-Dashboard
 
-Una suite modular de inteligencia financiera que combina análisis técnico avanzado con monitoreo de sentimiento de mercado en tiempo real. Este ecosistema permite una visión 360° de los activos, integrando proyecciones matemáticas y fundamentos noticiosos.
+Este proyecto es una herramienta práctica para el análisis de mercados que une dos mundos: la estadística matemática y el flujo de noticias real. Su objetivo es evitar que tomes decisiones basadas solo en una gráfica, dándote contexto sobre qué está pasando en el mundo mientras analizas la tendencia del precio.
+
+### 🎯 ¿Para qué sirve?
+* **Análisis Técnico**: Calcula automáticamente hacia dónde se dirige el precio y define zonas de riesgo (soporte/resistencia) usando modelos matemáticos.
+* **Contexto Fundamental**: Filtra y organiza las noticias más importantes de tus activos para que no tengas que buscarlas manualmente en diferentes portales.
+* **Decisiones Informadas**: Al tener la proyección y la noticia en un mismo lugar, puedes validar si un movimiento de mercado tiene un sustento real o es puro ruido.
 
 ---
 
@@ -46,7 +51,7 @@ Dashboard interactivo construido con **Streamlit** y conectado a la API profesio
 
 1.  **Clonar el repositorio**:
     ```bash
-    git clone [https://github.com/TU_USUARIO/Market-Intel-Suite.git](https://github.com/TU_USUARIO/Market-Intel-Suite.git)
+    git clone [https://github.com/TU_USUARIO/Finance-Analytics-Dashboard.git](https://github.com/TU_USUARIO/Finance-Analytics-Dashboard.git)
     ```
 2.  **Instalar dependencias**:
     ```bash
