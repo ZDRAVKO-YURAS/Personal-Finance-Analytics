@@ -51,7 +51,7 @@ Dashboard interactivo construido con **Streamlit** y conectado a la API profesio
 
 1.  **Clonar el repositorio**:
     ```bash
-    git clone [https://github.com/TU_USUARIO/Finance-Analytics-Dashboard.git](https://github.com/TU_USUARIO/Finance-Analytics-Dashboard.git)
+    git clone [https://github.com/ZDRAVKO-YURAS/Finance-Analytics-Dashboard.git](https://github.com/ZDRAVKO-YURAS/Finance-Analytics-Dashboard.git)
     ```
 2.  **Instalar dependencias**:
     ```bash
