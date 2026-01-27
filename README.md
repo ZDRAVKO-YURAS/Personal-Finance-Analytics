@@ -1,54 +1,61 @@
-# 📈 Financial Price Projection with Confidence Bands
+# 🏛️ Market-Intel-Suite
 
-Este proyecto utiliza **Python** y **Machine Learning** (Regresión Lineal) para analizar datos históricos de acciones y proyectar tendencias futuras a 90 días, incluyendo bandas de probabilidad basadas en la desviación estándar.
+Una suite modular de inteligencia financiera que combina análisis técnico avanzado con monitoreo de sentimiento de mercado en tiempo real. Este ecosistema permite una visión 360° de los activos, integrando proyecciones matemáticas y fundamentos noticiosos.
 
-## 🚀 Características
-- Descarga de datos en tiempo real mediante `yfinance`.
-- Cálculo de tendencia central mediante Regresión Lineal de Scikit-Learn.
-- Visualización de **Bandas de Probabilidad (95%)** para medir el riesgo y la volatilidad.
-- Comparativa visual entre datos históricos y proyecciones futuras.
+---
 
-## 🧠 Metodología y Análisis Técnico
-Este proyecto implementa un enfoque cuantitativo para la estimación de precios basado en dos pilares estadísticos:
+## 📈 Módulo 1: Proyección de Precios con Bandas de Confianza
 
-**1. Regresión Lineal Simple**
-Se utiliza para identificar la tendencia subyacente. El modelo minimiza la suma de los cuadrados de las diferencias entre los precios de cierre reales y la línea proyectada:
+Este módulo implementa un enfoque cuantitativo para la estimación de precios basado en dos pilares estadísticos fundamentales.
+
+### 🧠 Metodología y Análisis Técnico
+
+#### 1. Regresión Lineal Simple
+Se utiliza para identificar la tendencia subyacente del activo. El modelo minimiza la suma de los cuadrados de las diferencias entre los precios de cierre reales y la línea proyectada:
 
 $$y = \beta_0 + \beta_1x + \epsilon$$
 
-Donde $\beta_1$ representa la pendiente (el momentum actual de la acción).
+Donde $\beta_1$ representa la pendiente, es decir, el **momentum** actual de la acción.
 
-**2. Bandas de Error Estándar (Canal de Regresión)**
-El modelo no solo proyecta una línea, sino que mide la volatilidad respecto a esa tendencia:
-- Cálculo: Se obtiene la Desviación Estándar ($\sigma$) de los residuos.
-- Intervalos de Confianza: Se aplican $\pm 2\sigma$ desde la línea central. Según la distribución normal, esto cubre aproximadamente el 95% de los movimientos de precio probables.
+#### 2. Bandas de Error Estándar (Canal de Regresión)
+El modelo no solo proyecta una línea, sino que mide la **volatilidad** respecto a esa tendencia para gestionar el riesgo:
 
-**3. Interpretación de Resultados**
-- Banda Superior: Posible resistencia o zona de sobrecompra.
-- Banda Inferior: Posible soporte o zona de sobreventa (oportunidad de entrada).
-- Ancho del Canal: Refleja el riesgo histórico del activo. Un canal ancho indica alta volatilidad.
+* **Cálculo**: Se obtiene la Desviación Estándar ($\sigma$) de los residuos (la distancia entre el precio real y la línea de regresión).
+* **Intervalos de Confianza**: Se aplican **$\pm2\sigma$** desde la línea central. Según la distribución normal, esto cubre aproximadamente el **95% de los movimientos de precio probables**, permitiendo identificar zonas de agotamiento.
 
-**🚨Disclaimer:** Este proyecto es exclusivamente con fines educativos y de portafolio. No constituye asesoría financiera.
+#### 3. Interpretación de Resultados
+* **Banda Superior**: Posible zona de sobrecompra o resistencia técnica.
+* **Banda Inferior**: Posible zona de sobreventa o soporte (oportunidad de entrada).
+* **Ancho del Canal**: Refleja el riesgo histórico; un canal ancho indica alta volatilidad.
 
 ---
 
 ## 🗞️ Módulo 2: Terminal de Noticias en Tiempo Real (Dashboard)
 
-Además del análisis técnico, el repositorio incluye una **Terminal de Noticias** interactiva construida con **Streamlit** y conectada a la API profesional de **Finnhub**.
+Dashboard interactivo construido con **Streamlit** y conectado a la API profesional de **Finnhub** para el análisis fundamental.
 
-### 🚀 Características del Dashboard
-- **Interfaz Profesional**: Diseño basado en tarjetas (Cards) con visualización de fuentes y miniaturas.
-- **Conexión API**: Consumo de datos en tiempo real evitando bloqueos de scraping.
-- **Multiticker**: Capacidad de monitorear múltiples activos (Acciones, Crypto) simultáneamente desde la barra lateral.
-- **Filtrado de Sentimiento**: Acceso directo a resúmenes y fuentes oficiales (Yahoo Finance, Bloomberg, etc.).
+### 🚀 Características
+* **Interfaz Profesional**: Diseño basado en tarjetas (Cards) con visualización de fuentes y miniaturas.
+* **Conexión API**: Consumo de datos en tiempo real evitando bloqueos de scraping.
+* **Multiticker**: Monitoreo simultáneo de múltiples activos (Acciones, Crypto).
+* **Análisis Rápido**: Acceso directo a resúmenes y fuentes oficiales.
 
-### 🛠️ Cómo ejecutar el Dashboard
-1. Navega a la carpeta: `cd terminal_noticias`
-2. Ejecuta Streamlit: `streamlit run app_noticias.py`
+---
 
-## 🛠️ Tecnologías Utilizadas
-- **Lenguaje**: Python 3.x
-- **Análisis de Datos**: Pandas, Numpy.
-- **Machine Learning**: Scikit-Learn (Linear Regression).
-- **Visualización**: Matplotlib, Streamlit.
-- **Fuentes de Datos**: YFinance API, Finnhub API.
+## 🛠️ Instalación y Uso
+
+1.  **Clonar el repositorio**:
+    ```bash
+    git clone [https://github.com/TU_USUARIO/Market-Intel-Suite.git](https://github.com/TU_USUARIO/Market-Intel-Suite.git)
+    ```
+2.  **Instalar dependencias**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Ejecutar Dashboard de Noticias**:
+    ```bash
+    streamlit run terminal_noticias/noticias_dashboard_2.py
+    ```
+
+---
+> **Disclaimer**: Este proyecto es exclusivamente con fines educativos. No constituye asesoría financiera.
