@@ -29,3 +29,26 @@ El modelo no solo proyecta una línea, sino que mide la volatilidad respecto a e
 - Ancho del Canal: Refleja el riesgo histórico del activo. Un canal ancho indica alta volatilidad.
 
 **🚨Disclaimer:** Este proyecto es exclusivamente con fines educativos y de portafolio. No constituye asesoría financiera.
+
+---
+
+## 🗞️ Módulo 2: Terminal de Noticias en Tiempo Real (Dashboard)
+
+Además del análisis técnico, el repositorio incluye una **Terminal de Noticias** interactiva construida con **Streamlit** y conectada a la API profesional de **Finnhub**.
+
+### 🚀 Características del Dashboard
+- **Interfaz Profesional**: Diseño basado en tarjetas (Cards) con visualización de fuentes y miniaturas.
+- **Conexión API**: Consumo de datos en tiempo real evitando bloqueos de scraping.
+- **Multiticker**: Capacidad de monitorear múltiples activos (Acciones, Crypto) simultáneamente desde la barra lateral.
+- **Filtrado de Sentimiento**: Acceso directo a resúmenes y fuentes oficiales (Yahoo Finance, Bloomberg, etc.).
+
+### 🛠️ Cómo ejecutar el Dashboard
+1. Navega a la carpeta: `cd terminal_noticias`
+2. Ejecuta Streamlit: `streamlit run app_noticias.py`
+
+## 🛠️ Tecnologías Utilizadas
+- **Lenguaje**: Python 3.x
+- **Análisis de Datos**: Pandas, Numpy.
+- **Machine Learning**: Scikit-Learn (Linear Regression).
+- **Visualización**: Matplotlib, Streamlit.
+- **Fuentes de Datos**: YFinance API, Finnhub API.
