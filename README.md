@@ -1,15 +1,17 @@
-# Sistema de Análisis de Finanzas Personales
+# 📈 Financial Price Projection with Confidence Bands
 
-## Descripción
-Proyecto de análisis de datos financieros personales usando SQL, Python y Power BI para identificar patrones de gasto, optimizar presupuesto y proyectar ahorros.
+Este proyecto utiliza **Python** y **Machine Learning** (Regresión Lineal) para analizar datos históricos de acciones y proyectar tendencias futuras a 90 días, incluyendo bandas de probabilidad basadas en la desviación estándar.
 
-## Herramientas
-- SQL (SQLite)
-- Python (pandas, matplotlib)
-- Power BI
+## 🚀 Características
+- Descarga de datos en tiempo real mediante `yfinance`.
+- Cálculo de tendencia central mediante Regresión Lineal de Scikit-Learn.
+- Visualización de **Bandas de Probabilidad (95%)** para medir el riesgo y la volatilidad.
+- Comparativa visual entre datos históricos y proyecciones futuras.
 
-## Estado
-🚧 En desarrollo
+## 🛠️ Instalación
+1. Clona el repositorio: `git clone https://github.com/TU_USUARIO/Financial-Projections-Bot.git`
+2. Instala las librerías: `pip install -r requirements.txt`
+3. Ejecuta el script: `python main.py`
 
-## Autor
-Zdravko Yuras - Ingeniero Comercial, Magíster en Finanzas
+## 📊 Ejemplo de Resultado
+*(Aquí debes subir una captura de pantalla del gráfico que genera tu código)*
